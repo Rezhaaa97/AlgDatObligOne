@@ -10,6 +10,7 @@ public class Oblig1 {
         for (int i = 1; i <a.length ; i++) {
             if(a[i]> maks){
                 maks = a[i];
+                System.out.println("hei ");
 
             }
 
