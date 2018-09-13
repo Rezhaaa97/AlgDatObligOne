@@ -21,16 +21,16 @@ public class Oblig1Test {
     public static void main(String[] args) {
         int antallFeil = 0;
 
-        //antallFeil += oppgave1();
-        //antallFeil += oppgave2();
-        //antallFeil += oppgave3();
-        //antallFeil += oppgave4();
-        //antallFeil += oppgave5();
-        //antallFeil += oppgave6();
+        antallFeil += oppgave1();
+        antallFeil += oppgave2();
+        antallFeil += oppgave3();
+        antallFeil += oppgave4();
+        antallFeil += oppgave5();
+        antallFeil += oppgave6();
         antallFeil += oppgave7();
-        //antallFeil += oppgave8();
-        //antallFeil += oppgave9();
-        //antallFeil += oppgave10();
+        antallFeil += oppgave8();
+        antallFeil += oppgave9();
+        antallFeil += oppgave10();
 
         if (antallFeil == 0) {
             System.out.println("Gratulerer!! Du passerte testen!");
@@ -41,7 +41,6 @@ public class Oblig1Test {
     }
 
     ///// Oppgave 1 //////////////////////////////////////
-/*
     public static int oppgave1() {
         int antallFeil = 0;
 
@@ -93,11 +92,9 @@ public class Oblig1Test {
         }
         return antallFeil;
     }
-*/
 
 ///// Oppgave 2 //////////////////////////////////////
 
-/*
     public static int oppgave2() {
         int antallFeil = 0;
 
@@ -147,9 +144,7 @@ public class Oblig1Test {
         }
         return antallFeil;
     }
-*/
     ///// Oppgave 3 //////////////////////////////////////
-/*
     public static int oppgave3() {
         int antallFeil = 0;
 
@@ -187,10 +182,8 @@ public class Oblig1Test {
 
         return antallFeil;
     }
-*/
 
     ///// Oppgave 4 //////////////////////////////////////
-/*
     public static int oppgave4() {
         int antallFeil = 0;
 
@@ -346,9 +339,7 @@ public class Oblig1Test {
         return antallFeil;
     }
 
-*/
     ///// Oppgave 5 //////////////////////////////////////
-/*
     public static int oppgave5() {
         int antallFeil = 0;
 
@@ -389,8 +380,6 @@ public class Oblig1Test {
 
         return antallFeil;
     }
-*/
-/*
     ///// Oppgave 6 //////////////////////////////////////
 
     public static int oppgave6() {
@@ -503,9 +492,7 @@ public class Oblig1Test {
 
         return antallFeil;
     }
-*/
     ///// Oppgave 7 //////////////////////////////////////
-
     public static int oppgave7() {
         int antallFeil = 0;
         String s = null;
@@ -629,7 +616,6 @@ public class Oblig1Test {
 
         return antallFeil;
     }
-/*
 
     ///// Oppgave 8 //////////////////////////////////////
 
@@ -960,8 +946,7 @@ public class Oblig1Test {
     }
 
     ///// Hjelpemetoder /////////////////////////////
-*/
-/*
+
 
     public static void bytt(int[] a, int i, int j) {
         int temp = a[i];
@@ -1009,5 +994,5 @@ public class Oblig1Test {
 
         return a;                        // permutasjonen returneres
     }
-*/
+
 } // class Oblig1Test
