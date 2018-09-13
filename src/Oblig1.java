@@ -82,7 +82,7 @@ public class Oblig1 {
 
 */
     ////// OPPGAVE 3
-
+/*
     public static int antallUlikeUsortert(int[] a){
         if (a.length < 1){
             return  0;
@@ -103,7 +103,7 @@ public class Oblig1 {
         return teller;
     }
 
-
+*/
     //////OPPGAVE 4
 /*
     public static void delsortering(int[] a) {
