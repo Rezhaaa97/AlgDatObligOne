@@ -157,6 +157,111 @@ public class Oblig1 {
     }
     */
 
+
+/*
+////////OPPGAVE 5
+public static void rotasjon(char[] a){
+    if(a.length == 0){
+        return;
+    }
+    char temp = a[a.length-1];
+    for(int i = a.length-2; i >= 0; i--){
+        a[i+1] = a[i];
+    }
+    a[0] = temp;
+}
+
+
+    //OPPGAVE 6
+    public static void rotasjon(char[] a, int k){
+        if(k == 1){
+            rotasjon(a);
+            return;
+        }
+        int venstre = 0;
+        int høyre = 0;
+        int n = a.length;
+        if (n == 0){
+            rotasjon(a);
+            return;   // tomt
+        }
+        if((k %= n) < 0){
+            k += n;   // motsatt vei?
+        }
+        for (venstre = 0, høyre = n - 1; venstre < høyre;){
+            rotere(a, venstre++, høyre--); // snur a[a:n>
+        }
+        for (venstre = 0, høyre = k - 1; venstre < høyre;){
+            rotere(a, venstre++, høyre--); // snur a[0:d>
+        }
+        for (venstre = k, høyre = n - 1; venstre < høyre;){
+            rotere(a, venstre++, høyre--);   // snur a[d:n>
+        }
+    }
+
+
+
+    public static void rotere(char[] a, int i,int j){
+        char temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+*/
+    //OPPGAVE 7
+
+    public static String flett(String s,String t){
+        String result = "";
+        if (s.length() > t.length()){
+            for (int i = 0;i < s.length();i++){
+                if (i<t.length()){
+                    result += s.charAt(i);
+                    result += t.charAt(i);
+                }else{
+                    result +=s.charAt(i);
+                }
+            }
+        }else if (t.length()>s.length()){
+            for (int i = 0; i < t.length();i++){
+                if (i<s.length()){
+                    result += s.charAt(i);
+                    result += t.charAt(i);
+                }else result += t.charAt(i);
+
+            }
+
+            return result;
+        }
+
+        return result;
+
+    }
+
+    public static String flett(String... s){
+        String result = "";
+
+        int lengst = lengstString(s);
+        for (int i=0; i<lengst;i++){
+            for (int j=0; j <s.length;j++){
+                if (i < s[j].length()){
+                    result += s[j].charAt(i);
+                }
+
+            }
+        }
+        return result;
+    }
+
+    public static int lengstString(String... s) {
+        int lengde = 0;
+        for (int i=0; i <s.length;i++){
+            if (lengde < s[i].length()){
+                lengde = s[i].length();
+            }
+        }
+        return lengde;
+    }
+
+
 }
 
 
