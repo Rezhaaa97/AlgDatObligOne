@@ -21,9 +21,9 @@ public class Oblig1Test {
     public static void main(String[] args) {
         int antallFeil = 0;
 
-        antallFeil += oppgave1();
+        //antallFeil += oppgave1();
         //antallFeil += oppgave2();
-        //antallFeil += oppgave3();
+        antallFeil += oppgave3();
         //antallFeil += oppgave4();
         //antallFeil += oppgave5();
         //antallFeil += oppgave6();
@@ -41,7 +41,7 @@ public class Oblig1Test {
     }
 
     ///// Oppgave 1 //////////////////////////////////////
-
+/*
     public static int oppgave1() {
         int antallFeil = 0;
 
@@ -93,11 +93,11 @@ public class Oblig1Test {
         }
         return antallFeil;
     }
-
+*/
 
 ///// Oppgave 2 //////////////////////////////////////
-    /*
 
+/*
     public static int oppgave2() {
         int antallFeil = 0;
 
@@ -149,7 +149,7 @@ public class Oblig1Test {
     }
 */
     ///// Oppgave 3 //////////////////////////////////////
-/*
+
     public static int oppgave3() {
         int antallFeil = 0;
 
@@ -187,7 +187,7 @@ public class Oblig1Test {
 
         return antallFeil;
     }
-    */
+
 
     ///// Oppgave 4 //////////////////////////////////////
 /*
@@ -345,7 +345,8 @@ public class Oblig1Test {
 
         return antallFeil;
     }
-*/
+
+
     ///// Oppgave 5 //////////////////////////////////////
 /*
     public static int oppgave5() {
@@ -958,12 +959,14 @@ public class Oblig1Test {
     }
 
     ///// Hjelpemetoder /////////////////////////////
-
+*/
+/*
     public static void bytt(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
+
 
     public static boolean nestePermutasjon(int[] a) {
         int n = a.length;
@@ -984,6 +987,7 @@ public class Oblig1Test {
         while (i < j) bytt(a, i++, j--);
         return true;
     }
+
 
     public static int[] randPerm(int n)  // en effektiv versjon
     {
