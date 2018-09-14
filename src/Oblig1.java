@@ -305,28 +305,25 @@ public static void rotasjon(char[] a){
             if(a[i] < tredMinstVerdi){
                 if(a[i] < nestMinVerdi){
                     if (a[i] < minVerdi){
-                        //ny tred minst
+                        //ny tredje minst
                         tnmin = nmin;
                         tredMinstVerdi = nestMinVerdi;
-                        //ny nest min
+                        //ny nest minst
                         nmin = min;
                         nestMinVerdi = minVerdi;
-                        // ny min
+                        // ny minst
                         min = i;
                         minVerdi = a[i];
 
                     } else{
 
-                        //ny tred mest min
                         tnmin = nmin;
                         tredMinstVerdi = nestMinVerdi;
 
-                        // ny nest min
                         nmin = i;
                         nestMinVerdi = a[i];
                     }
                 } else {
-                    // ny tred min
                     tnmin = i;
                     tredMinstVerdi = a[i];
                 }
@@ -336,7 +333,7 @@ public static void rotasjon(char[] a){
         return new int[] {min, nmin, tnmin};
     }
 
-
+//Oppgave 10
 
     public static boolean inneholdt(String a, String b){
 
